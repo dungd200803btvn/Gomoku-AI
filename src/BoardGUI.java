@@ -92,13 +92,13 @@ public class BoardGUI extends JPanel {
 		if(posX >= boardSize || posY >= boardSize) return;
 		
 		g2D.setColor(black ? Color.black : Color.white);
-		g2D.fillOval((int)(cellLength*(posX+0.05)), 
+		g2D.fillOval((int)(cellLength*(posX+0.05)), //ve hinh bau duc(quan co)
 					 (int)(cellLength*(posY+0.05)), 
 					 (int)(cellLength*0.9), 
 					 (int)(cellLength*0.9));
 		g2D.setColor(Color.black);
-		g2D.setStroke(new BasicStroke(2));
-		g2D.drawOval((int)(cellLength*(posX+0.05)), 
+		g2D.setStroke(new BasicStroke(2));//duong vien
+		g2D.drawOval((int)(cellLength*(posX+0.05)), //duong vien hinh bau duc
 					 (int)(cellLength*(posY+0.05)), 
 					 (int)(cellLength*0.9), 
 					 (int)(cellLength*0.9));

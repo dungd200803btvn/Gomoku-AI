@@ -309,6 +309,7 @@ public class Minimax {
 	}
 	public static void evaluateDirections(int[][] boardMatrix, int i, int j, boolean isBot, boolean botsTurn, int[] eval) {
 		// Check if the selected player has a stone in the current cell
+		// [0] -> consecutive count, [1] -> block count, [2] -> score
 		if (boardMatrix[i][j] == (isBot ? 2 : 1)) {
 			// Increment consecutive stones count
 			eval[0]++;
